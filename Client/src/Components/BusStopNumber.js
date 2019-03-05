@@ -9,10 +9,9 @@ import '.././Style/App.css'
 class BusStopNumber extends Component {
     render() {
         const { handleButtonClick } = this.props
-        console.log('this.props: ', this.props)
         return (
             <button onClick={handleButtonClick} class='btn_styling'>
-                'Hello from Bus number '
+                <i class="fas fa-microphone-alt mic_img"></i>
             </button>
         );
     }

@@ -11,9 +11,17 @@ import BusTime from './Components/BusTime';
  * @extends {Component}
  */
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      bustNumber: null,
+      busStopNumber: null,
+      busTime: null
+    }
+  }
 
-  handleButtonClick = () => {
-    console.log('clicked')
+  handleButtonClick = event => {
+    console.log('handle click: ', event.target.name)
   }
 
   render() {
@@ -28,8 +36,8 @@ class App extends Component {
             <BusStopNumber handleButtonClick={this.handleButtonClick} />
           </div>
 
-          <div id='bus_time' className='btn_styling mic_img' className='outer_container_styling'>
-            <BusTime />
+          <div id='bus_time' className='outer_container_styling'>
+            <BusTime handleButtonClick={this.handleButtonClick} />
           </div>
         </div>
       </div >

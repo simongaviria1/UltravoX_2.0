@@ -19,10 +19,9 @@ class BusNumber extends Component {
 
     render() {
         const { handleButtonClick } = this.props
-        console.log('this.props: ', this.props)
         return (
-            <button onClick={handleButtonClick} className='btn_styling'>
-                'Hello from Bus number '
+            <button onClick={handleButtonClick} className='btn_styling' name='bustNumber'>
+                <i class="fas fa-microphone-alt mic_img"></i>
             </button>
         );
     }

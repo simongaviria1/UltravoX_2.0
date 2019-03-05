@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import '.././Style/App.css'
+
 /**
  *
  *
@@ -8,8 +10,11 @@ import React, { Component } from 'react'
  */
 class BusTime extends Component {
     render() {
+        const { handleButtonClick } = this.props
         return (
-            "Hello from BusTime"
+            <button className='btn_styling' onClick={handleButtonClick}>
+            "Bus time information will display here"
+            </button> 
         );
     };
 };
