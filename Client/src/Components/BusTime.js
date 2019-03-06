@@ -12,7 +12,7 @@ class BusTime extends Component {
     render() {
         const { handleButtonClick } = this.props
         return (
-            <button className='btn_styling' onClick={handleButtonClick}>
+            <button className='btn_styling' onClick={handleButtonClick} name='busTime'>
             "Bus time information will display here"
             </button> 
         );
