@@ -10,8 +10,8 @@ class BusStopNumber extends Component {
     render() {
         const { handleButtonClick } = this.props
         return (
-            <button onClick={handleButtonClick} class='btn_styling'>
-                <i class="fas fa-microphone-alt mic_img"></i>
+            <button onClick={handleButtonClick} className='btn_styling' name='busStopNumber'>
+                <i className="fas fa-microphone-alt mic_img" name='busStopNumber'></i>
             </button>
         );
     }
