@@ -10,17 +10,11 @@ import '.././Style/App.css'
  */
 
 class BusNumber extends Component {
-    constructor() {
-        super();
-        this.state = {
-            listening: false
-        }
-    }
 
     render() {
-        const { handleButtonClick } = this.props
+        const { handleButtonClick, startListening } = this.props
         return (
-            <button onClick={handleButtonClick} className='btn_styling' name='busNumber'>
+            <button onClick={startListening} className='btn_styling' name='busNumber'>
                 <i className="fas fa-microphone-alt mic_img" name='busNumber'></i>
             </button>
         );
